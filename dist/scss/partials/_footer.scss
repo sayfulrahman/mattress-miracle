@@ -1,0 +1,118 @@
+footer.matmir-yui {
+    background-color: $color-1;
+
+    .matmir-yss {
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        @include breakpoint($breakpoint-tablet) {
+            padding-top: 70px;
+            padding-bottom: 25px;
+        }
+    }
+
+    h3 {
+        color: #FFF;
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 28px;
+        margin-bottom: 15px;
+    }
+
+    ul li {
+        margin-bottom: 6px;
+        &:last-child{
+            margin-bottom: 0px;
+        }
+
+        a {
+            color: #F8F9FA;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 28px;
+            text-decoration: none;
+        }
+    }
+
+    .matmir-btm {
+        background-color: $color-3;
+
+        p {
+            color: $color-0;
+            text-align: center;
+            margin-top: 1rem;
+            font-size: 16px;
+
+            @include breakpoint($breakpoint-tablet) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .matmir-xhe {
+        @include breakpoint($breakpoint-desktop) {
+            margin-top: 30px;
+        }
+
+        @include breakpoint($breakpoint-tablet) {
+            width: 65%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        input {
+            border-radius: 5px;
+            color: $color-0;
+            padding: 5px 15px 5px 10px;
+            border: 0px none;
+            background-color: rgba(206, 212, 218, 0.5);
+
+            &::placeholder {
+                color: $color-0;
+                opacity: 1;
+                /* Firefox */
+            }
+
+            &::-ms-input-placeholder {
+                /* Edge 12 -18 */
+                color: $color-0;
+            }
+        }
+
+        span {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+        }
+    }
+
+    @include breakpoint($breakpoint-desktop) {
+        .matmir-ggg {
+            display: flex;
+        }
+
+        .matmir-uuy {
+            display: none;
+        }
+
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+        .matmir-ggg {
+            display: none;
+        }
+
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+        [class*="col-"] {
+            margin-bottom: 35px;
+            text-align: center;
+        }
+    }
+}

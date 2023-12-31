@@ -1,0 +1,41 @@
+.matmir-fta{
+    .matmir-fos{
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+    .matmir-xyy{
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .mitmir-sli{
+        margin-left: 15px;
+        margin-right: 15px;
+        text-align: center;
+    }
+    .glider-prev, .glider-next{
+        top: 0;
+        img{
+            bottom: 10px;
+            position: relative;
+        }
+        @include breakpoint($breakpoint-desktop) {
+            display: none;
+        }
+    }
+    .glider{
+        overflow-x: hidden;
+    }
+    .glider img{
+        filter: grayscale(100%);
+        opacity: 0.5;
+        transition: filter 0.3s ease, opacity 0.3s ease;
+    }
+    .glider-slide:hover img {
+        filter: grayscale(0%);
+        opacity: 1;
+    }
+    .glider-track{
+        align-items: center;
+    }
+}

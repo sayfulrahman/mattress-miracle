@@ -1,0 +1,142 @@
+body main>article {
+    margin-bottom: 0px !important;
+}
+.matmir-soc {
+    background-color: $color-7;
+    z-index: 1;
+
+    @include breakpoint($breakpoint-desktop) {
+    background-image: url(https://www.mattressmiracle.com/wp-content/themes/mattress-miracle/assets/img/group.png);
+    background-position: 20% 50%;
+    background-repeat: no-repeat,no-repeat;
+    background-size: auto;
+    }
+
+    .matmir-sss {
+        padding-top: 45px;
+        padding-bottom: 78px;
+        @include breakpoint($breakpoint-tablet) {
+            padding-bottom: 100px;
+        }
+    }
+
+    .matmir-jjp {
+        margin-bottom: 4px;
+
+        ul {
+            flex-direction: row;
+        }
+    }
+
+    .matmir-jjj {
+        margin-bottom: 15px;
+
+        @include breakpoint($breakpoint-desktop) {
+            ul {
+                flex-direction: row;
+            }
+        }
+
+        li {
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            color: $color-4;
+
+            a {
+                color: $color-1;
+            }
+
+            @include breakpoint($breakpoint-desktop) {
+                list-style: disc;
+                margin-left: 30px;
+            }
+
+            &:first-child {
+                list-style: none;
+                margin-left: 0px;
+            }
+
+            @include breakpoint($breakpoint-tablet) {
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    .matmir-jjp ul li {
+        margin-left: 30px;
+        list-style: disc;
+        color: $color-4;
+        font-family: 'Inter', sans-serif;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+
+        &:first-child {
+            list-style: none;
+            margin-left: 0px;
+        }
+
+        &:last-child {
+            font-weight: 500;
+            color: $color-2;
+        }
+
+        @include breakpoint($breakpoint-tablet) {
+            margin-left: 25px;
+        }
+    }
+
+    h1 {
+        color: $color-2;
+        font-family: 'Lora', serif;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px;
+        text-transform: uppercase;
+    }
+
+    .matmir-o0o li {
+        color: $color-4;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        margin-bottom: 8px;
+        &:last-child{
+            margin-bottom: 0px;
+        }
+    }
+
+    .matmir-o0o li span {
+        margin-right: 6px;
+    }
+
+    .matmir-poy {
+        position: absolute;
+        bottom: -118px;
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        @include breakpoint($breakpoint-tablet) {
+            bottom: -165px;
+        }
+        @include breakpoint($breakpoint-desktop) {
+        .matmir-xhd{
+            position: absolute;
+            left: -85px;
+            top: -10px;
+        }
+    }
+    @include breakpoint($breakpoint-tablet) {
+        .matmir-xhd{
+            display: none;
+        }
+    }
+    }
+}

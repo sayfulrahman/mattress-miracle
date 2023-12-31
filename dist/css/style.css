@@ -1,0 +1,1554 @@
+/**
+* Base
+*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Lora:wght@400;500;600;700&display=swap");
+body {
+  color: #212529;
+  background-color: white;
+}
+
+/** Button outline */
+.btn:focus,
+[type="button"]:focus,
+select.custom-select:focus,
+input:focus,
+textarea:focus {
+  outline: 0 !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+/** Base-abc */
+.matmir-abc {
+  -ms-flex-align: stretch;
+  -ms-flex-direction: column;
+  -ms-flex-negative: 0;
+  -ms-flex-preferred-size: auto;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-basis: auto;
+  -webkit-flex-direction: column;
+  -webkit-flex-shrink: 0;
+  -moz-box-align: stretch;
+  align-items: stretch;
+  border: 0 solid black;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-basis: auto;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  flex-direction: column;
+  flex-shrink: 0;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.matmir-lmn {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/**
+ * Mixins
+ */
+/**
+ * Utilities
+ */
+@media only screen and (min-width: 576px) {
+  .container,
+  .container-sm {
+    max-width: 570px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+header.matmir-1xy {
+  background-color: white;
+  z-index: 1000;
+  height: 80px;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 575px) {
+  header.matmir-1xy {
+    height: 70px;
+  }
+}
+
+header.matmir-1xy .matmir-nav {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  header.matmir-1xy .matmir-nav {
+    display: none;
+  }
+}
+
+header.matmir-1xy .matmir-nav > ul {
+  flex-direction: row;
+}
+
+header.matmir-1xy .matmir-nav > ul > li {
+  margin-left: 7px;
+  margin-right: 7px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+header.matmir-1xy .matmir-nav > ul > li a {
+  color: black;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+
+header.matmir-1xy .matmir-nav > ul > li.dropdown {
+  position: relative;
+}
+
+header.matmir-1xy .matmir-nav > ul > li.dropdown li {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+header.matmir-1xy .matmir-nav > ul > li.dropdown li a {
+  font-size: 15px;
+}
+
+header.matmir-1xy .matmir-nav > ul > li.dropdown:hover .matmir-abs {
+  display: block;
+}
+
+header.matmir-1xy .matmir-yun {
+  padding-left: 50px;
+}
+
+header.matmir-1xy .matmir-7xt {
+  width: 210px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: #FFC107;
+  color: #2F1E4E;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+  line-height: 2.8;
+  text-decoration: none;
+  border: 2px solid #FFC107;
+}
+
+header.matmir-1xy .matmir-abs {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 196px;
+  min-height: 220px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  z-index: 2;
+  padding: 15px;
+  display: none;
+}
+
+header.matmir-1xy .matmir-logo {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+header.matmir-1xy .matmir-logo a {
+  display: inline-block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+header.matmir-1xy .matmir-rso {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  header.matmir-1xy .matmir-rso {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    justify-content: center;
+  }
+  header.matmir-1xy button.matmir-aar {
+    border: 0px none;
+    background-color: transparent;
+  }
+}
+
+.matmir-yjk {
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: -100vw;
+  right: 0px;
+  z-index: 9999;
+  transition: left 0.6s cubic-bezier(0.6, 0.1, 0.68, 0.53);
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.matmir-yjk.active {
+  left: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .matmir-yjk {
+    display: none;
+  }
+}
+
+.matmir-yjk button {
+  border: 0px none;
+  background-color: transparent;
+  z-index: 1;
+  padding: 0;
+}
+
+.matmir-yjk .matmir-oun {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  align-items: center;
+}
+
+.matmir-yjk .matmir-7xt {
+  width: 80%;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: #FFC107;
+  color: #2F1E4E;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+  line-height: 2.8;
+  text-decoration: none;
+  border: 2px solid #FFC107;
+}
+
+.matmir-yjk .matmir-nav {
+  padding: 75px 0px;
+}
+
+.matmir-yjk .matmir-nav > ul > li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.matmir-yjk .matmir-nav > ul > li a {
+  width: 100%;
+  display: block;
+  color: black;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.matmir-yjk .matmir-nav > ul > li .matmir-wra {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.matmir-yjk .matmir-nav > ul > li.dropdown {
+  position: relative;
+}
+
+.matmir-yjk .matmir-nav > ul > li.dropdown li {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.matmir-yjk .matmir-nav > ul > li.dropdown li a {
+  font-size: 15px;
+}
+
+.matmir-yjk .matmir-nav > ul > li.dropdown .matmir-abs {
+  display: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.matmir-yjk .matmir-nav > ul > li.dropdown .matmir-abs.active {
+  display: block;
+}
+
+.matmir-yjk .matmir-nav > ul > li.dropdown.active span {
+  transform: rotate(180deg);
+}
+
+.matmir-yjk .matmir-lll {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.matmir-bbi {
+  background-color: #F7F8FA;
+}
+
+@media only screen and (min-width: 768px) {
+  .matmir-bbi {
+    background-image: url(https://www.mattressmiracle.com/wp-content/themes/mattress-miracle/assets/img/5534845.png);
+    background-position: 105% 105%;
+    background-repeat: no-repeat,no-repeat;
+    background-size: auto;
+  }
+}
+
+.matmir-bbi .matmir-iss {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+@media only screen and (max-width: 575px) {
+  .matmir-bbi .matmir-iss {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.matmir-bbi .matmir-par {
+  align-items: center;
+}
+
+.matmir-bbi .matmir-par h1 {
+  color: #2F1E4E;
+  text-align: center;
+  font-family: 'Lora', serif;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 55px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 575px) {
+  .matmir-bbi .matmir-par h1 {
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 20px;
+  }
+}
+
+.matmir-bbi .matmir-par p {
+  color: #2F1E4E;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 575px) {
+  .matmir-bbi .matmir-par p {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
+}
+
+.matmir-bbi .matmir-yxt {
+  width: 374px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #FFC107;
+  font-family: 'Inter', sans-serif;
+  line-height: normal;
+  border: 2px solid #FFC107;
+  color: #2F1E4E;
+  text-align: center;
+  line-height: 2.8;
+  text-decoration: none;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media only screen and (max-width: 575px) {
+  .matmir-bbi .matmir-yxt {
+    width: 315px;
+    height: 50px;
+    line-height: 2.5;
+  }
+}
+
+.matmir-bbi .matmir-k0o {
+  max-width: 600px;
+}
+
+.matmir-fta .matmir-fos {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.matmir-fta .matmir-xyy {
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.matmir-fta .mitmir-sli {
+  margin-left: 15px;
+  margin-right: 15px;
+  text-align: center;
+}
+
+.matmir-fta .glider-prev, .matmir-fta .glider-next {
+  top: 0;
+}
+
+.matmir-fta .glider-prev img, .matmir-fta .glider-next img {
+  bottom: 10px;
+  position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  .matmir-fta .glider-prev, .matmir-fta .glider-next {
+    display: none;
+  }
+}
+
+.matmir-fta .glider {
+  overflow-x: hidden;
+}
+
+.matmir-fta .glider img {
+  filter: grayscale(100%);
+  opacity: 0.5;
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.matmir-fta .glider-slide:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.matmir-fta .glider-track {
+  align-items: center;
+}
+
+.matmir-cta {
+  background-color: white;
+  align-items: center;
+}
+
+.matmir-cta .matmir-yos {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+@media only screen and (max-width: 767px) {
+  .matmir-cta .matmir-yos [class*="col-"] {
+    margin-bottom: 40px;
+  }
+  .matmir-cta .matmir-yos [class*="col-"]:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.matmir-cta .matmir-loi img {
+  margin-bottom: 7px;
+}
+
+.matmir-cta .matmir-loi h3 {
+  color: black;
+  font-family: 'Lora', serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  width: 75%;
+}
+
+.matmir-cta .matmir-loi p {
+  color: #212529;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 0px;
+}
+
+.matmir-cta .matmir-yxt {
+  width: 374px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #FFC107;
+  font-family: 'Inter', sans-serif;
+  line-height: normal;
+  border: 2px solid #FFC107;
+  color: #2F1E4E;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.matmir-cta .matmir-k0o {
+  width: 600px;
+}
+
+.matmir-exp {
+  background-color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .matmir-exp {
+    background-image: url(../assets/img/5534845.png);
+    background-position: -4% 105%;
+    background-repeat: no-repeat,no-repeat;
+    background-size: auto;
+  }
+}
+
+.matmir-exp .matmir-ios {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.matmir-exp .matmir-poi {
+  align-items: center;
+}
+
+.matmir-exp .matmir-poi h4 {
+  color: #212529;
+  text-align: center;
+  font-family: 'Lora', serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 575px) {
+  .matmir-exp .matmir-poi h4 {
+    font-size: 35px;
+  }
+}
+
+.matmir-exp .matmir-poi p {
+  color: #2F1E4E;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 35px;
+}
+
+@media only screen and (max-width: 575px) {
+  .matmir-exp .matmir-poi p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+.matmir-exp .matmir-poi h5 {
+  color: black;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 575px) {
+  .matmir-exp .matmir-poi h5 {
+    margin-bottom: 15px;
+  }
+}
+
+.matmir-exp .matmir-yxt {
+  width: 374px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #FFC107;
+  font-family: 'Inter', sans-serif;
+  line-height: normal;
+  border: 2px solid #FFC107;
+  color: #2F1E4E;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.matmir-exp .matmir-k0o {
+  max-width: 600px;
+}
+
+.matmir-exp .matmir-jkl {
+  align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .matmir-exp .matmir-jkl {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.matmir-exp .matmir-jkl ul {
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 575px) {
+  .matmir-exp .matmir-jkl ul {
+    margin-bottom: 12px;
+  }
+}
+
+.matmir-exp .matmir-jkl span a {
+  color: #2F1E4E;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  text-decoration: none;
+}
+
+.matmir-exp .matmir-jkl li {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.matmir-exp .matmir-jkl li span {
+  margin-right: 5px;
+}
+
+.matmir-exp .matmir-jkl li a {
+  color: #2F1E4E;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  text-decoration: none;
+}
+
+.matmir-toc {
+  background-color: #F7F8FA;
+}
+
+@media only screen and (min-width: 768px) {
+  .matmir-toc {
+    background-image: url(https://www.mattressmiracle.com/wp-content/themes/mattress-miracle/assets/img/group.png);
+    background-position: 20% 5%;
+    background-repeat: no-repeat,no-repeat;
+    background-size: auto;
+  }
+}
+
+.matmir-toc .matmir-rss {
+  padding-top: 45px;
+  padding-bottom: 25px;
+  min-height: 212px;
+}
+
+.matmir-toc .matmir-ojp {
+  margin-bottom: 4px;
+}
+
+.matmir-toc .matmir-ojp ul {
+  flex-direction: row;
+}
+
+.matmir-toc .matmir-hjj {
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .matmir-toc .matmir-hjj ul {
+    flex-direction: row;
+  }
+}
+
+.matmir-toc .matmir-hjj li {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  color: #212529;
+}
+
+@media only screen and (min-width: 768px) {
+  .matmir-toc .matmir-hjj li {
+    list-style: disc;
+    margin-left: 30px;
+  }
+}
+
+.matmir-toc .matmir-hjj li:first-child {
+  list-style: none;
+  margin-left: 0px;
+}
+
+@media only screen and (max-width: 767px) {
+  .matmir-toc .matmir-hjj li {
+    margin-bottom: 5px;
+  }
+}
+
+.matmir-toc .matmir-ojp ul li {
+  margin-left: 30px;
+  list-style: disc;
+  color: #212529;
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.matmir-toc .matmir-ojp ul li:first-child {
+  list-style: none;
+  margin-left: 0px;
+}
+
+.matmir-toc .matmir-ojp ul li:last-child {
+  font-weight: 500;
+  color: #2F1E4E;
+}
+
+@media only screen and (max-width: 767px) {
+  .matmir-toc .matmir-ojp ul li {
+    margin-left: 25px;
+  }
+}
+
+.matmir-toc h1 {
+  color: #2F1E4E;
+  font-family: 'Lora', serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.matmir-toc p {
+  color: #212529;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+.matmir-pal .matmir-iis {
+  padding-top: 20px;
+  padding-bottom: 45px;
+}
+
+.matmir-pal .matmir-parts {
+  grid-column-gap: 4px;
+  grid-row-gap: 4px;
+  flex-wrap: wrap;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  align-items: stretch;
+  display: grid;
+}
+
+@media only screen and (max-width: 767px) {
+  .matmir-pal .matmir-parts {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .matmir-pal .matmir-parts {
+    grid-template-columns: 1fr;
+  }
+}
+
+.matmir-pal .matmir-part {
+  border-radius: 25px;
+  background: #F7F8FA;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 7px;
+}
+
+.matmir-pal .matmir-part a {
+  color: #212529;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  text-decoration: none;
+  padding: 4px;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 575px) {
+  .matmir-pal .matmir-part {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+body main > article {
+  margin-bottom: 0px !important;
+}
+
+.matmir-soc {
+  background-color: #F7F8FA;
+  z-index: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .matmir-soc {
+    background-image: url(https://www.mattressmiracle.com/wp-content/themes/mattress-miracle/assets/img/group.png);
+    background-position: 20% 50%;
+    background-repeat: no-repeat,no-repeat;
+    background-size: auto;
+  }
+}
+
+.matmir-soc .matmir-sss {
+  padding-top: 45px;
+  padding-bottom: 78px;
+}
+
+@media only screen and (max-width: 767px) {
+  .matmir-soc .matmir-sss {
+    padding-bottom: 100px;
+  }
+}
+
+.matmir-soc .matmir-jjp {
+  margin-bottom: 4px;
+}
+
+.matmir-soc .matmir-jjp ul {
+  flex-direction: row;
+}
+
+.matmir-soc .matmir-jjj {
+  margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+  .matmir-soc .matmir-jjj ul {
+    flex-direction: row;
+  }
+}
+
+.matmir-soc .matmir-jjj li {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  color: #212529;
+}
+
+@media only screen and (min-width: 768px) {
+  .matmir-soc .matmir-jjj li {
+    list-style: disc;
+    margin-left: 30px;
+  }
+}
+
+.matmir-soc .matmir-jjj li:first-child {
+  list-style: none;
+  margin-left: 0px;
+}
+
+@media only screen and (max-width: 767px) {
+  .matmir-soc .matmir-jjj li {
+    margin-bottom: 5px;
+  }
+}
+
+.matmir-soc .matmir-jjp ul li {
+  margin-left: 30px;
+  list-style: disc;
+  color: #212529;
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.matmir-soc .matmir-jjp ul li:first-child {
+  list-style: none;
+  margin-left: 0px;
+}
+
+.matmir-soc .matmir-jjp ul li:last-child {
+  font-weight: 500;
+  color: #2F1E4E;
+}
+
+@media only screen and (max-width: 767px) {
+  .matmir-soc .matmir-jjp ul li {
+    margin-left: 25px;
+  }
+}
+
+.matmir-soc h1 {
+  color: #2F1E4E;
+  font-family: 'Lora', serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.matmir-soc .matmir-o0o li {
+  color: #212529;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.matmir-soc .matmir-o0o li:last-child {
+  margin-bottom: 0px;
+}
+
+.matmir-soc .matmir-o0o li span {
+  margin-right: 6px;
+}
+
+.matmir-soc .matmir-poy {
+  position: absolute;
+  bottom: -118px;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 767px) {
+  .matmir-soc .matmir-poy {
+    bottom: -165px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .matmir-soc .matmir-poy .matmir-xhd {
+    position: absolute;
+    left: -85px;
+    top: -10px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .matmir-soc .matmir-poy .matmir-xhd {
+    display: none;
+  }
+}
+
+.matmir-mli .matmir-xcs {
+  padding-top: 75px;
+  padding-bottom: 45px;
+}
+
+@media only screen and (max-width: 767px) {
+  .matmir-mli .matmir-xcs {
+    padding-top: 100px;
+  }
+}
+
+.matmir-mli h2 {
+  color: #2F1E4E;
+  font-family: 'Inter', sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 15px;
+  margin-top: 35px;
+}
+
+.matmir-mli h2:first-child {
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 767px) {
+  .matmir-mli h2 {
+    margin-top: 25px;
+  }
+}
+
+.matmir-mli p {
+  color: #212529;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.matmir-mli p:last-child {
+  margin-bottom: 0px;
+}
+
+.matmir-hui .matmir-hss {
+  padding-bottom: 45px;
+}
+
+.matmir-poy {
+  border-radius: 5px;
+  align-items: center;
+  background: #562E69;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+  padding: 15px 25px;
+}
+
+@media only screen and (min-width: 768px) {
+  .matmir-poy {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .matmir-poy {
+    text-align: center;
+  }
+}
+
+.matmir-poy h4 {
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.matmir-poy p {
+  color: #FFF;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 4px;
+}
+
+.matmir-poy a {
+  border-radius: 2px;
+  background: #FFC107;
+  display: flex;
+  width: 207.346px;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media only screen and (max-width: 767px) {
+  .matmir-poy a {
+    margin-top: 10px;
+  }
+}
+
+.matmir-pvc {
+  background-color: white;
+}
+
+.matmir-pvc .matmir-css {
+  padding-top: 45px;
+  padding-bottom: 25px;
+  min-height: 210px;
+}
+
+.matmir-pvc .matmir-ojp {
+  margin-bottom: 4px;
+}
+
+.matmir-pvc .matmir-ojp ul {
+  flex-direction: row;
+}
+
+.matmir-pvc .matmir-qjj {
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .matmir-pvc .matmir-qjj ul {
+    flex-direction: row;
+  }
+}
+
+.matmir-pvc .matmir-qjj li {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  color: #212529;
+}
+
+@media only screen and (min-width: 768px) {
+  .matmir-pvc .matmir-qjj li {
+    list-style: disc;
+    margin-left: 30px;
+  }
+}
+
+.matmir-pvc .matmir-qjj li:first-child {
+  list-style: none;
+  margin-left: 0px;
+}
+
+@media only screen and (max-width: 767px) {
+  .matmir-pvc .matmir-qjj li {
+    margin-bottom: 5px;
+  }
+}
+
+.matmir-pvc .matmir-ojp ul li {
+  margin-left: 30px;
+  list-style: disc;
+  color: #212529;
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.matmir-pvc .matmir-ojp ul li:first-child {
+  list-style: none;
+  margin-left: 0px;
+}
+
+.matmir-pvc .matmir-ojp ul li:last-child {
+  font-weight: 500;
+  color: #2F1E4E;
+}
+
+@media only screen and (max-width: 767px) {
+  .matmir-pvc .matmir-ojp ul li {
+    margin-left: 25px;
+  }
+}
+
+.matmir-pvc h1 {
+  color: #2F1E4E;
+  font-family: 'Lora', serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.matmir-pvc p {
+  color: #212529;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+.matmir-qli .matmir-qcs {
+  padding-top: 25px;
+  padding-bottom: 45px;
+}
+
+.matmir-qli article h2 {
+  color: #2F1E4E;
+  font-family: 'Inter', sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+
+.matmir-qli article p {
+  color: #212529;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.matmir-qli article ul {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.matmir-qli article ul li {
+  margin-bottom: 4px;
+}
+
+.matmir-for {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.matmir-for .matmir-xxy {
+  background: white;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 45px 75px;
+}
+
+.matmir-for .matmir-xxy h2 {
+  font-family: Lora, serif;
+  text-align: center;
+  font-size: 40px;
+  line-height: 55px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 767px) {
+  .matmir-for .matmir-xxy h2 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
+
+.matmir-for .matmir-xxy form {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.matmir-for .matmir-bpa .matmir-spa {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: 13px;
+}
+
+.matmir-for .matmir-bpa .matmir-bor {
+  border-bottom: 1px solid #edf2f7;
+}
+
+.matmir-for .matmir-bpa .matmir-gss {
+  position: relative;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.matmir-for .matmir-bpa .matmir-gsa {
+  font-size: 14px;
+  text-align: center;
+  line-height: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: white;
+}
+
+.matmir-for .matmir-bpa .matmir-s8c {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.matmir-for .matmir-bpa .matmir-s8c a {
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  border: 1px solid #562E69;
+  margin-left: 4px;
+  margin-right: 4px;
+  border-radius: 3px;
+}
+
+.matmir-for .matmir-shs {
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+@media only screen and (max-width: 767px) {
+  .matmir-for .matmir-shs {
+    padding-left: 0px;
+  }
+}
+
+.matmir-for .matmir-shs .matmir-hed h2 {
+  font-family: Lora, serif;
+  font-size: 32px;
+  line-height: 50px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 767px) {
+  .matmir-for .matmir-shs .matmir-hed h2 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
+.matmir-for .matmir-shs .matmir-hed p {
+  line-height: 1.5em;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 0px;
+}
+
+.matmir-for .matmir-xyd {
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 767px) {
+  .matmir-for .matmir-xyd {
+    margin-top: 20px;
+  }
+}
+
+.matmir-for .matmir-xyd.matmir-center {
+  align-items: center;
+}
+
+.matmir-for .matmir-xyd img {
+  padding: 15px;
+  border-radius: 15px;
+  background-color: #562E69;
+}
+
+.matmir-for .matmir-xyd p {
+  margin-left: 15px;
+  line-height: 1.5em;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 0px;
+}
+
+.matmir-for .matmir-xyd a {
+  text-decoration: none;
+  color: #2F1E4E;
+}
+
+footer.matmir-yui {
+  background-color: #562E69;
+}
+
+footer.matmir-yui .matmir-yss {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@media only screen and (max-width: 767px) {
+  footer.matmir-yui .matmir-yss {
+    padding-top: 70px;
+    padding-bottom: 25px;
+  }
+}
+
+footer.matmir-yui h3 {
+  color: #FFF;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  margin-bottom: 15px;
+}
+
+footer.matmir-yui ul li {
+  margin-bottom: 6px;
+}
+
+footer.matmir-yui ul li:last-child {
+  margin-bottom: 0px;
+}
+
+footer.matmir-yui ul li a {
+  color: #F8F9FA;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  text-decoration: none;
+}
+
+footer.matmir-yui .matmir-btm {
+  background-color: #2B1634;
+}
+
+footer.matmir-yui .matmir-btm p {
+  color: white;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 767px) {
+  footer.matmir-yui .matmir-btm p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  footer.matmir-yui .matmir-xhe {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  footer.matmir-yui .matmir-xhe {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+footer.matmir-yui .matmir-xhe input {
+  border-radius: 5px;
+  color: white;
+  padding: 5px 15px 5px 10px;
+  border: 0px none;
+  background-color: rgba(206, 212, 218, 0.5);
+}
+
+footer.matmir-yui .matmir-xhe input::placeholder {
+  color: white;
+  opacity: 1;
+  /* Firefox */
+}
+
+footer.matmir-yui .matmir-xhe input::-ms-input-placeholder {
+  /* Edge 12 -18 */
+  color: white;
+}
+
+footer.matmir-yui .matmir-xhe span {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+@media only screen and (min-width: 768px) {
+  footer.matmir-yui .matmir-ggg {
+    display: flex;
+  }
+  footer.matmir-yui .matmir-uuy {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  footer.matmir-yui .matmir-ggg {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  footer.matmir-yui [class*="col-"] {
+    margin-bottom: 35px;
+    text-align: center;
+  }
+}

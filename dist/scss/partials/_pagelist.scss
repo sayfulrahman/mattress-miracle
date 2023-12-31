@@ -1,0 +1,50 @@
+.matmir-pal {
+    .matmir-iis {
+        padding-top: 20px;
+        padding-bottom: 45px;
+    }
+
+    .matmir-parts {
+        grid-column-gap: 4px;
+        grid-row-gap: 4px;
+        flex-wrap: wrap;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-columns: 1fr;
+        align-items: stretch;
+        display: grid;
+        @include breakpoint($breakpoint-tablet) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @include breakpoint($breakpoint-phone) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .matmir-part {
+        border-radius: 25px;
+        background: #F7F8FA;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding: 7px;
+        a {
+            color: $color-4;
+            text-align: center;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px;
+            text-decoration: none;
+            padding: 4px;
+            display: inline-block;
+        }
+        @include breakpoint($breakpoint-phone) {
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
